@@ -3,4 +3,7 @@ In this Website, I try to show my skills in creating a website from scratch. In 
 
 I provide not only my skills, but my information on how I became the person I am today. 
 
+Deployed link:https://kimah1999.github.io/MyPortfolio/
+Linkedin: https://www.linkedin.com/in/kimberly-y-aguilar-h/
+
 ![snapshot finalversion](https://user-images.githubusercontent.com/87666809/139374118-fc4f9906-7f6c-45bf-9e46-51ce36aa8794.png)
