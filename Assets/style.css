@@ -17,9 +17,11 @@ h1 {
     font-size: 200%;
 }
   /*Article in Main style section*/
-h2 {
+h2,
+h3 {
     margin: 2% 0;
     font-size: 250%;
+    text-decoration: green wavy underline;
 }
   
 nav ul {
