@@ -8,4 +8,6 @@ Deployed link:https://kimah1999.github.io/MyPortfolio/
 
 Linkedin: https://www.linkedin.com/in/kimberly-y-aguilar-h/
 
-![snapshot finalversion](https://user-images.githubusercontent.com/87666809/139374118-fc4f9906-7f6c-45bf-9e46-51ce36aa8794.png)
+
+![PortfolioDemo](https://user-images.githubusercontent.com/87666809/141602397-363c7b4f-2f8e-4b7f-8525-a4ba06710f5a.png)
+![PortfolioDemoEnd](https://user-images.githubusercontent.com/87666809/141602400-22a3a7d6-3a04-47fb-be6b-3579920cba6d.png)
