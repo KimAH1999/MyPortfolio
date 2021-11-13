@@ -11,4 +11,5 @@ Linkedin: https://www.linkedin.com/in/kimberly-y-aguilar-h/
 
 ![PortfolioDemo](https://user-images.githubusercontent.com/87666809/141602459-af08e0f8-7a12-47ee-9093-ac2be3c5fb41.png)
 
-![PortfolioDemoEnd](https://user-images.githubusercontent.com/87666809/141602400-22a3a7d6-3a04-47fb-be6b-3579920cba6d.png)
+
+![PortfolioDemoEnd](https://user-images.githubusercontent.com/87666809/141602545-047ad412-f79d-489e-9839-716966dff4fb.png)
