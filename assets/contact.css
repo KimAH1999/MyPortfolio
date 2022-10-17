@@ -52,6 +52,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #ff5ea2;
 }
+
 /*Contacts page*/
 /* Google Font CDN Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -192,6 +193,7 @@ nav ul li a:hover {
 .button input[type="button"]:hover {
   background: #5029bc;
 }
+
 /*Footer social links*/
 .social-links a i {
   height: 13px;
@@ -215,7 +217,35 @@ nav ul li a:hover {
   }
 }
 
-@media (max-width: 820px) {
+@media (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#ff54a2, #ff575a);
+    position: absolute;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
   .contactContainer {
     margin: 40px 0;
     height: 100%;

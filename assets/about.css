@@ -32,6 +32,7 @@
     display: none;
 }
 
+
 nav {
     flex: 1;
     text-align: right;
@@ -51,4 +52,34 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff5ea2;
+}
+/*media sizing update*/
+@media only screen and (max-width:700px) {
+    nav ul {
+        width: 100%;
+        background: linear-gradient(#ff54a2, #ff575a);
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: 0.5s;
+    }
 }
