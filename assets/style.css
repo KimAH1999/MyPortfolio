@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
-.container{
+
+.container {
     width: 100%;
     min-height: 100vh;
     padding-left: 8%;
@@ -11,69 +12,83 @@
     box-sizing: border-box;
     overflow: hidden;
 }
-.navbar{
+
+.navbar {
     width: 100%;
     display: flex;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 50px;
     cursor: pointer;
     margin: 30px 0;
 }
-.menu-icon{
+
+.menu-icon {
     width: 25px;
     cursor: pointer;
     display: none;
 }
-nav{
+
+nav {
     flex: 1;
     text-align: right;
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
     display: inline-block;
     margin-right: 30px;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
 }
-nav ul li a:hover{
+
+nav ul li a:hover {
     color: #ff5ea2;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 100px 0;
 }
-.col-1{
+
+.col-1 {
     flex-basis: 40%;
     position: relative;
     margin-left: 50px;
 }
-.col-1 h2{
+
+.col-1 h2 {
     font-size: 54px;
 }
-.col-1 h3{
+
+.col-1 h3 {
     font-size: 30px;
     color: #707070;
     font-weight: 100;
     margin: 20px 0 10px;
 }
-.col-1 p{
+
+.col-1 p {
     font-size: 16px;
     color: #b7b7b7;
     font-weight: 100;
 }
+
 /*adds margin to seperate <p> to <h4>*/
-.col-1 h4{
+.col-1 h4 {
     margin: 30px 0;
     font-size: 20px;
 }
-.col-1::after{
+
+.col-1::after {
     content: '';
     width: 10px;
     height: 57%;
@@ -82,16 +97,19 @@ nav ul li a:hover{
     left: -40px;
     top: 8px;
 }
-.col-2{
+
+.col-2 {
     position: relative;
     flex-basis: 60%;
     display: flex;
     align-items: center;
 }
-.col-2 .selfieBrand{
+
+.col-2 .selfieBrand {
     width: 35%;
 }
-.color-box{
+
+.color-box {
     position: absolute;
     right: 0;
     top: 0;
@@ -102,25 +120,30 @@ nav ul li a:hover{
     z-index: -1;
     transform: translateX(150px);
 }
-.add-btn img{
+
+.boxSum img {
     width: 35px;
     margin-bottom: 5px;
 }
-.add-btn{
+
+.boxSum {
     text-align: center;
     color: #fff;
     cursor: pointer;
 }
-.social-links a i{
+/*Footer social links*/
+.social-links a i {
     height: 13px;
     margin: 20px;
     cursor: pointer;
 }
-.social-links{
+
+.social-links {
     text-align: center;
 }
-@media only screen and (max-width:700px){
-    nav ul{
+/*media sizing update*/
+@media only screen and (max-width:700px) {
+    nav ul {
         width: 100%;
         background: linear-gradient(#ff54a2, #ff575a);
         position: absolute;
@@ -128,42 +151,53 @@ nav ul li a:hover{
         right: 0;
         z-index: 2;
     }
-    nav ul li{
+
+    nav ul li {
         display: block;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-    nav ul li a{
+
+    nav ul li a {
         color: #fff;
     }
-    .menu-icon{
+
+    .menu-icon {
         display: block;
     }
-    #menuList{
+
+    #menuList {
         overflow: hidden;
         transition: 0.5s;
     }
-    .row{
+
+    .row {
         flex-direction: column-reverse;
         margin: 50px 0;
     }
-    .col-2{
+
+    .col-2 {
         flex-basis: 100%;
         margin-bottom: 50px;
     }
-    .col-2 .selfieBrand{
+
+    .col-2 .selfieBrand {
         width: 50%;
     }
-    .color-box{
+
+    .color-box {
         transform: translateX(75px);
     }
-    .col-1{
+
+    .col-1 {
         flex-basis: 100%;
     }
-    .col-1 h2{
+
+    .col-1 h2 {
         font-size: 35px;
     }
-    .col-1 h3{
+
+    .col-1 h3 {
         font-size: 15px;
     }
 }
