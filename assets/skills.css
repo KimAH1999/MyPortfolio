@@ -48,6 +48,7 @@ nav ul li a {
     text-decoration: none;
     color: #000;
     font-size: 14px;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -58,31 +59,23 @@ nav ul li a:hover {
     text-align: center;
     font-size: 45px;
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #b58bc2;
     margin: 10px 135px 10px 135px;
 }
 
 .projects {
-    margin-top: 10%;
-    margin-bottom: 20%;
-    margin-left: 50px;
-    margin-right: 10%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
     align-items: center;
 }
 
 .projectsTitleTextEdit {
     color: rgb(0, 0, 0);
-
     text-align: center;
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
     padding: 20px;
-    margin-left: 25%;
-    margin-bottom: 50%;
     backdrop-filter: blur(1px);
     border-radius: 3rem;
 }
@@ -99,7 +92,7 @@ nav ul li a:hover {
     text-align: center;
     font-size: 45px;
     color: rgb(255, 255, 255);
-    background-color: #000000;
+    background-color: #b58bc2;
     margin: 10px 135px 10px 135px;
 
 }
@@ -109,16 +102,11 @@ nav ul li a:hover {
     padding: 20px;
 }
 
-.skills {
-    background-position: center top;
-    background-repeat: no-repeat;
-}
-
 /*skills list edit text*/
 .skillsList {
     padding: 5px;
-    margin-bottom: 1%;
-    margin-left: 15%;
+    margin-left: 10%;
+    margin-right: 45%;
     font-weight: 900;
 }
 

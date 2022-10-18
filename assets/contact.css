@@ -47,6 +47,7 @@ nav ul li a {
   text-decoration: none;
   color: #000;
   font-size: 14px;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
@@ -67,7 +68,7 @@ nav ul li a:hover {
 body {
   min-height: 100vh;
   width: 100%;
-  background: #c8e8e9;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -122,8 +123,8 @@ nav ul li a:hover {
 }
 
 .contactContainer {
-  width: 85%;
-  background: #fff;
+  width: 100%;
+  background: rgb(174, 84, 192);
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -136,7 +137,7 @@ nav ul li a:hover {
 }
 
 .contactContainer .content .left-side {
-  width: 25%;
+  width: 30%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -176,7 +177,7 @@ nav ul li a:hover {
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
   font-size: 14px;
-  color: #afafb6;
+  color: #efd8d8;
 }
 
 .contactContainer .content .right-side {
@@ -247,7 +248,7 @@ nav ul li a:hover {
   }
 
   .contactContainer {
-    margin: 40px 0;
+    margin: 40px 15px;
     height: 100%;
   }
 
