@@ -60,7 +60,6 @@ nav ul li a:hover {
     font-size: 45px;
     color: rgb(255, 255, 255);
     background-color: #b58bc2;
-    margin: 10px 135px 10px 135px;
 }
 
 .projects {
@@ -70,14 +69,9 @@ nav ul li a:hover {
 }
 
 .projectsTitleTextEdit {
-    color: rgb(0, 0, 0);
-    text-align: center;
     font-size: 20px;
     font-weight: bold;
-    text-decoration: underline;
-    padding: 20px;
-    backdrop-filter: blur(1px);
-    border-radius: 3rem;
+    padding: 50px;
 }
 
 .projectsImgs {
@@ -93,8 +87,6 @@ nav ul li a:hover {
     font-size: 45px;
     color: rgb(255, 255, 255);
     background-color: #b58bc2;
-    margin: 10px 135px 10px 135px;
-
 }
 
 .skillsSummary {
@@ -104,8 +96,8 @@ nav ul li a:hover {
 
 /*skills list edit text*/
 .skillsList {
-    padding: 5px;
-    margin-left: 10%;
+    margin-left: 20%;
+    margin-top: 2%;
     margin-right: 45%;
     font-weight: 900;
 }
@@ -114,7 +106,6 @@ nav ul li a:hover {
 .iconContainer {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end;
 }
 
 /*nodejs icon*/
@@ -208,7 +199,7 @@ nav ul li a:hover {
         width: 100%;
         background: linear-gradient(#ff54a2, #ff575a);
         position: absolute;
-        top: 75px;
+        top: 85px;
         right: 0;
         z-index: 2;
     }
@@ -230,5 +221,29 @@ nav ul li a:hover {
     #menuList {
         overflow: hidden;
         transition: 0.5s;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .skillsList {
+        font-size: 15px;
+        float: right;
+    }
+
+    .iconContainer {
+        margin-left: 65%;
+        max-width: 30%;
+        display: block;
+    }
+    .nodejsIcon,
+    .visualStudio,
+    .sqlIcon,
+    .insomnia,
+    .gitbash,
+    .mongodb {
+        height: 75px;
+        width: auto;
     }
 }
