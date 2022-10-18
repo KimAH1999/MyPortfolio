@@ -64,14 +64,18 @@ nav ul li a:hover {
 
 .projects {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    margin: 50px 0 50px 0;
 }
 
 .projectsTitleTextEdit {
-    font-size: 20px;
+   
     font-weight: bold;
-    padding: 50px;
+    text-align: center;
+    color: blueviolet;
+    padding: 20px; 
 }
 
 .projectsImgs {
@@ -226,6 +230,12 @@ nav ul li a:hover {
 
     .projects {
         display: block;
+        width: 100%;
+    }
+
+    .projectsTitleTextEdit {
+        text-align: center;
+        padding: 26%;
     }
 
     .skillsList {
