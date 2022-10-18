@@ -147,7 +147,7 @@ nav ul li a:hover {
 @media only screen and (max-width:700px) {
     nav ul {
         width: 100%;
-        background: linear-gradient(#ff54a2, #ff575a);
+        background: linear-gradient(#cf2773, #db4447);
         position: absolute;
         top: 85px;
         right: 0;

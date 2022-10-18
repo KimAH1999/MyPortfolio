@@ -115,7 +115,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #000;
-  font-size: 14px;
+  font-size: 21px;
 }
 
 nav ul li a:hover {
@@ -124,9 +124,9 @@ nav ul li a:hover {
 
 .contactContainer {
   width: 100%;
-  background: rgb(174, 84, 192);
+  background: rgb(197, 129, 129);
   border-radius: 6px;
-  padding: 20px 60px 30px 40px;
+  padding: 20px 60px 180px 40px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -186,9 +186,9 @@ nav ul li a:hover {
 }
 
 .content .right-side .topic-text {
-  font-size: 23px;
+  font-size: 30px;
   font-weight: 600;
-  color: #3e2093;
+  color: #000000;
 }
 
 .button input[type="button"]:hover {
@@ -197,12 +197,15 @@ nav ul li a:hover {
 
 /*Footer social links*/
 .social-links a i {
-  height: 13px;
-  margin: 20px;
+  height: auto;
+  margin: 10px;
   cursor: pointer;
 }
 
 .social-links {
+  position: fixed;
+  bottom: 0px;
+  width: 81%;
   text-align: center;
 }
 
@@ -221,7 +224,7 @@ nav ul li a:hover {
 @media (max-width: 700px) {
   nav ul {
     width: 100%;
-    background: linear-gradient(#ff54a2, #ff575a);
+    background: linear-gradient(#cf2773, #db4447);
     position: absolute;
     top: 85px;
     right: 0;
