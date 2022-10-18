@@ -57,7 +57,7 @@ nav ul li a:hover {
 
 .projectHeaderTitle {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color: rgb(255, 255, 255);
     background-color: #b58bc2;
 }
@@ -84,7 +84,7 @@ nav ul li a:hover {
 /*skills under "home" section*/
 .skillsTitle {
     text-align: center;
-    font-size: 45px;
+    font-size: 35px;
     color: rgb(255, 255, 255);
     background-color: #b58bc2;
 }
@@ -92,6 +92,7 @@ nav ul li a:hover {
 .skillsSummary {
     text-align: center;
     padding: 20px;
+    font-size: small;
 }
 
 /*skills list edit text*/
