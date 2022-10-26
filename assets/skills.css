@@ -96,7 +96,7 @@ nav ul li a:hover {
 .skillsSummary {
     text-align: center;
     padding: 20px;
-    font-size: small;
+    font-size: large;
 }
 
 /*skills list edit text*/
@@ -227,6 +227,14 @@ nav ul li a:hover {
         overflow: hidden;
         transition: 0.5s;
     }
+    /*change title when screen shifts to smaller media query size*/
+    .projectHeaderTitle,
+    .skillsTitle{
+        text-align: center;
+        font-size: 27px;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(#db4447,#ff5ea2)
+    }
 
     .projects {
         display: block;
@@ -237,6 +245,13 @@ nav ul li a:hover {
         text-align: center;
         padding: 26%;
     }
+
+    .skillsSummary {
+        text-align: center;
+        padding: 20px;
+        font-size: small;
+    }
+    
 
     .skillsList {
         font-size: 15px;

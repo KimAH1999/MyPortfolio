@@ -124,7 +124,7 @@ nav ul li a:hover {
 
 .contactContainer {
   width: 100%;
-  background: rgb(197, 129, 129);
+  background: linear-gradient(45deg, #ff469f, #ff5);
   border-radius: 6px;
   padding: 70px 60px 85px 60px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -170,13 +170,13 @@ nav ul li a:hover {
 }
 
 .content .left-side .details .topic {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
 }
 
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
-  font-size: 14px;
+  font-size: 17px;
   color: #efd8d8;
 }
 
@@ -186,9 +186,13 @@ nav ul li a:hover {
 }
 
 .content .right-side .topic-text {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 600;
   color: #000000;
+}
+
+.content .right-side p {
+  font-size: large;
 }
 
 .button input[type="button"]:hover {
@@ -274,5 +278,15 @@ nav ul li a:hover {
   .contactContainer .content .right-side {
     width: 100%;
     margin-left: 0;
+  }
+
+  .content .right-side .topic-text {
+    font-size: 25px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .content .right-side p {
+    font-size: small;
   }
 }
