@@ -227,6 +227,7 @@ nav ul li a:hover {
         overflow: hidden;
         transition: 0.5s;
     }
+    
     /*change title when screen shifts to smaller media query size*/
     .projectHeaderTitle,
     .skillsTitle{
