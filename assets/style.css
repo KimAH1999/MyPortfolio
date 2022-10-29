@@ -175,7 +175,7 @@ nav ul li a:hover {
     }
 
     .row {
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 50px 0;
     }
 
@@ -202,5 +202,11 @@ nav ul li a:hover {
 
     .col-1 h3 {
         font-size: 15px;
+    }
+
+    .boxSum {
+        margin-left: 5%;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
