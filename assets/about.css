@@ -157,7 +157,7 @@ small {
     right: 0;
 }
 
-/*media sizing update*/
+/*media sizing, update display when smaller screen*/
 @media only screen and (max-width:700px) {
     nav ul {
         width: 100%;
@@ -209,11 +209,6 @@ small {
         padding-bottom: 5px;
     }
 
-    h4 {
-        display: grid;
-        place-items: center;
-        font-size: 1px;
-    }
 
     small {
         color: rgba(44, 43, 43, 0.488);
@@ -227,7 +222,6 @@ small {
     a {
         font-family: Georgia, 'Times New Roman', Times, serif;
     }
-
 
     .flex-container {
         display: flex;
@@ -259,5 +253,8 @@ small {
     .eduContainer {
         font-size: xx-small;
         margin: 12px;
+    }
+    .button {
+        width: 85%;
     }
 }
