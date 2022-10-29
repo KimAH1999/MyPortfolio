@@ -219,10 +219,6 @@ small {
         font-size: 21px;
     }
 
-    a {
-        font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-
     .flex-container {
         display: flex;
         flex-direction: column;
