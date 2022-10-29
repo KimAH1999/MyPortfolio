@@ -209,7 +209,8 @@ nav ul li a:hover {
 .social-links {
   position: fixed;
   bottom: 0px;
-  width: 81%;
+  width: 87%;
+  font-size: 25px;
   text-align: center;
 }
 
