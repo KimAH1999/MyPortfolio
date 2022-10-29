@@ -111,8 +111,8 @@ small {
 
 .eduContainer {
     list-style-position: inside;
+    font-size: 21px;
     padding: 1em 2em 2em;
-    ;
     border: 1px solid lightpink;
     margin: 25px;
 }
@@ -251,8 +251,9 @@ small {
     }
 
     .eduContainer {
-        font-size: xx-small;
-        margin: 12px;
+        font-size: 21px;
+        padding: 2px;
+        margin: 1px;
     }
     .button {
         width: 85%;
