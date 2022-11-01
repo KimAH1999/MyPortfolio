@@ -238,6 +238,10 @@ nav ul li a:hover {
     display: none;
   }
 
+  .strongFontSize{
+    font-size: 15px;
+  }
+
   .contactContainer .content .right-side {
     width: 100%;
     margin-left: 0;
