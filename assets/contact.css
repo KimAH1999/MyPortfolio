@@ -168,11 +168,21 @@ nav ul li a:hover {
 }
 
 .social-links {
-  position: fixed;
-  bottom: 0px;
-  width: 87%;
-  font-size: 25px;
+  width: 100%;
+  font-size: 27px;
   text-align: center;
+}
+
+.fa-replit {
+  width: 14px;
+}
+
+.fa-color {
+  color: #000;
+}
+
+.fa-color:hover {
+  color: #ff54a2;
 }
 
 @media (max-width: 950px) {
