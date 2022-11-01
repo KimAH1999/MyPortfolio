@@ -152,7 +152,7 @@ nav ul li a:hover {
 .fa-color:hover {
     color: #ff54a2;
 }
-
+ /*replit icon wasn't available in font-awesome link, so img.png added instead to compensate*/
 .fa-replit {
    width: 17px;
    filter: black;
