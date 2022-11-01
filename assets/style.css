@@ -144,6 +144,21 @@ nav ul li a:hover {
     font-size: 25px;
     text-align: center;
 }
+
+.fa-color {
+    color: #000;
+}
+
+.fa-color:hover {
+    color: #ff54a2;
+}
+
+.fa-replit {
+   width: 17px;
+   filter: black;
+}
+
+
 /*media sizing update*/
 @media only screen and (max-width:700px) {
     nav ul {
