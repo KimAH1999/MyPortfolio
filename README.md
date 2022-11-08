@@ -3,7 +3,9 @@
 
 ## Description
 
-New knowledge gained inspired  my new design look in my webpage
+Hi!
+
+My name is Kimberly, I created MyPortfolio to share who I am and express what I can contribute towards the team. I am hoping to pull in some recruiters for any opportunity in Front-end and/or Back-end fields. Currently still searching, please email me at kimaguilar2017@gmail.com or message me on Linkdin. My goal is grow my skills and continue learning more to advance my abilities. My dream would be to work from home, but I am also excited to drive to work to regain social comunication around San Diego area. Since Covid, I studied via-online at San Diego Mesa College and UCSD Extension, I am advanced with working from home and dealing with my own issues using personal notes, Google, YouTube, and Slack to message friends for support if needed.
 
 ## Table of Contents 
 
