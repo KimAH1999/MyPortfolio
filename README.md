@@ -34,10 +34,12 @@ Demo link: https://kimah1999.github.io/MyPortfolio/
 
 1-PC output
 
-![portfolioHomePage](https://user-images.githubusercontent.com/87666809/196530843-ce34aa92-cec9-4d43-9abd-634bf684d01d.PNG)
+![Screenshot 2022-11-08 10 40 15 AM](https://user-images.githubusercontent.com/87666809/200648798-c94f0216-4688-45a0-a58b-419e1f383bb5.png)
+
+
 2-Smartphone output
 
-![portfolioPhoneDemo](https://user-images.githubusercontent.com/87666809/196530673-2d17e9af-6e6a-4862-8f55-10ce571bdc1d.PNG)
+![Screenshot 2022-11-08 10 41 13 AM](https://user-images.githubusercontent.com/87666809/200648783-f5105afd-92c3-4384-90ca-5139865a98d2.png)
 
 ## License  
 
