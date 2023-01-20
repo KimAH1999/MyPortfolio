@@ -232,7 +232,7 @@ ul li {
     .projectHeaderTitle,
     .skillsTitle{
         text-align: center;
-        font-size: 27px;
+        font-size: 25px;
         color: rgb(255, 255, 255);
         background: linear-gradient(#db4447,#ff5ea2)
     }
