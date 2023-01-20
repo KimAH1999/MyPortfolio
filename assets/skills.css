@@ -55,6 +55,9 @@ nav ul li a:hover {
     color: #ff5ea2;
 }
 
+ul li {
+    margin: 16px 0;
+}
 .projectHeaderTitle {
     text-align: center;
     font-size: 35px;
@@ -98,13 +101,10 @@ nav ul li a:hover {
     padding: 20px;
     font-size: large;
 }
-
-/*skills list edit text*/
+/*skillds listed*/
 .skillsList {
-    margin-left: 20%;
-    margin-top: 2%;
-    margin-right: 45%;
-    font-weight: 900;
+    margin: 16px 0;
+    padding-left: 40px
 }
 
 /*container for skills icons*/
@@ -249,8 +249,8 @@ nav ul li a:hover {
 
     .skillsSummary {
         text-align: center;
-        padding: 20px;
-        font-size: 21px;
+        padding: 18px;
+        font-size: 18px;
     }
     
 
@@ -260,9 +260,9 @@ nav ul li a:hover {
     }
 
     .iconContainer {
-        margin-left: 65%;
-        max-width: 30%;
-        display: block;
+        margin-left: 5%;
+        max-width: 92%;
+        display: flex;
     }
     .nodejsIcon,
     .visualStudio,
