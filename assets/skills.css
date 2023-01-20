@@ -260,6 +260,7 @@ ul li {
     .skillsList {
         font-size: 15px;
         float: right;
+        margin-bottom: 5px;
     }
 
     .iconContainer {
