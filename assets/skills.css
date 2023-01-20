@@ -58,6 +58,7 @@ nav ul li a:hover {
 ul li {
     margin: 16px 0;
 }
+
 .projectHeaderTitle {
     text-align: center;
     font-size: 35px;
@@ -230,7 +231,8 @@ ul li {
     
     /*change title when screen shifts to smaller media query size*/
     .projectHeaderTitle,
-    .skillsTitle{
+    .skillsTitle,
+    .sideProjectHeaderTitle{
         text-align: center;
         font-size: 20px;
         margin: 2px;
