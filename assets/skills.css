@@ -70,7 +70,7 @@ ul li {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin: 50px 0 50px 0;
+    margin: 15px 0 50px 0;
 }
 
 .projectsTitleTextEdit {
@@ -232,7 +232,7 @@ ul li {
     .projectHeaderTitle,
     .skillsTitle{
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         color: rgb(255, 255, 255);
         background: linear-gradient(#db4447,#ff5ea2)
     }
@@ -240,17 +240,19 @@ ul li {
     .projects {
         display: block;
         width: 100%;
+        text-align: center;
+        font-size: 17px;
     }
-
+    
     .projectsTitleTextEdit {
         text-align: center;
-        padding: 26%;
+        padding: 1%;
     }
 
     .skillsSummary {
         text-align: center;
         padding: 18px;
-        font-size: 18px;
+        font-size: 15px;
     }
     
 
