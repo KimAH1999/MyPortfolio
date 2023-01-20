@@ -233,7 +233,7 @@ ul li {
     .skillsTitle{
         text-align: center;
         font-size: 20px;
-        margin: 0 0 0 0;
+        margin: 2px;
         color: rgb(255, 255, 255);
         background: linear-gradient(#db4447,#ff5ea2);
     }
