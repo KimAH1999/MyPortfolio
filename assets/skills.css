@@ -233,8 +233,9 @@ ul li {
     .skillsTitle{
         text-align: center;
         font-size: 20px;
+        margin: 0 0 0 0;
         color: rgb(255, 255, 255);
-        background: linear-gradient(#db4447,#ff5ea2)
+        background: linear-gradient(#db4447,#ff5ea2);
     }
 
     .projects {
@@ -262,7 +263,7 @@ ul li {
     }
 
     .iconContainer {
-        margin-left: 5%;
+        margin-left: 7%;
         max-width: 92%;
         display: flex;
     }
