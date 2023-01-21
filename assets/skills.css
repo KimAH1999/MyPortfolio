@@ -272,9 +272,6 @@ ul li {
         margin-bottom: 5px;
     }
 
-    .iconContainer {
-        display: none;
-    }
     .nodejsIcon,
     .visualStudio,
     .sqlIcon,
