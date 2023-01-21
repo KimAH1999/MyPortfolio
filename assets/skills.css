@@ -90,8 +90,7 @@ ul li {
 }
 
 /*skills under "home" section*/
-.skillsTitle,
-.sideProjectHeaderTitle {
+.skillsTitle {
     text-align: center;
     font-size: 35px;
     color: rgb(255, 255, 255);
@@ -103,6 +102,7 @@ ul li {
     padding: 20px;
     font-size: large;
 }
+
 /*skillds listed*/
 .skillsList {
     margin: 16px 0;
@@ -200,6 +200,13 @@ ul li {
     background-image: url('./img/hoverOvermondodb.png');
 }
 
+.sideProjectHeaderTitle {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    background-color: #b58bc2;
+}
+
 /*media sizing update*/
 @media only screen and (max-width:700px) {
     nav ul {
@@ -262,12 +269,11 @@ ul li {
 
     .skillsList {
         font-size: 15px;
-        float: right;
         margin-bottom: 5px;
     }
 
     .iconContainer {
-        display:none;
+        display: none;
     }
     .nodejsIcon,
     .visualStudio,
@@ -279,3 +285,4 @@ ul li {
         width: auto;
     }
 }
+
