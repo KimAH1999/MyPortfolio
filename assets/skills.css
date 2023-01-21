@@ -267,9 +267,7 @@ ul li {
     }
 
     .iconContainer {
-        margin: 2px;
-        max-width: 92%;
-        display: flex;
+        display:none;
     }
     .nodejsIcon,
     .visualStudio,
