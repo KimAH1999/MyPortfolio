@@ -90,7 +90,8 @@ ul li {
 }
 
 /*skills under "home" section*/
-.skillsTitle {
+.skillsTitle,
+.sideProjectHeaderTitle {
     text-align: center;
     font-size: 35px;
     color: rgb(255, 255, 255);
