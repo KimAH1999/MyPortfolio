@@ -79,9 +79,9 @@ nav ul li a:hover {
 
 .contactContainer {
   width: 100%;
-  background: linear-gradient(45deg, #ff469f, #ff5);
+  background: linear-gradient(45deg, #cb4385, rgb(227, 111, 39));
   border-radius: 6px;
-  padding: 70px 60px 85px 60px;
+  padding: 70px 60px 120px 60px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
