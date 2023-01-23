@@ -232,7 +232,7 @@ nav ul li a:hover {
   .contactContainer .content .left-side {
     width: 100%;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 10px;
     justify-content: center;
     flex-wrap: wrap;
   }
