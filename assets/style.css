@@ -7,8 +7,8 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 0%;
+    padding-right: 3%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -191,7 +191,7 @@ nav ul li a:hover {
 
     .row {
         flex-direction: column;
-        margin: 5px 0;
+        margin: auto;
     }
 
     .col-2 {
@@ -212,16 +212,27 @@ nav ul li a:hover {
     }
 
     .col-1 h2 {
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .col-1 h3 {
         font-size: 15px;
     }
+    
+    .boxSum img {
+        width: 35px;
+        margin-bottom: 5px;
+    }
 
     .boxSum {
-        margin-left: 5%;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        text-align: inherit;
+        margin-left: 3%;
+        font-size: 13px;
+        padding-top: 8px;
+        padding-bottom: 5px;
+    }
+
+    .social-links {
+        display: inline-block;
     }
 }
