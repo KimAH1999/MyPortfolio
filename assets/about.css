@@ -16,14 +16,14 @@
 .navbar {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
 }
 
 
 .logo {
     width: 50px;
     cursor: pointer;
-    margin: 30px 0;
+    margin: 10px 5px;
 }
 
 nav {
