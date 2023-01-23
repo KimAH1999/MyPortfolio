@@ -7,8 +7,6 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 0%;
-    padding-right: 3%;
     box-sizing: border-box;
     overflow: hidden;
 }
