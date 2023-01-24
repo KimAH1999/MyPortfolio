@@ -63,7 +63,7 @@ nav ul li a:hover {
 .col-1 {
     flex-basis: 40%;
     position: relative;
-    margin-left: 50px;
+    margin-left: 20px;
 }
 
 .col-1 h2 {
@@ -92,7 +92,7 @@ nav ul li a:hover {
 .col-1::after {
     content: '';
     width: 12px;
-    height: 95%;
+    height: 90%;
     background: linear-gradient(#ff469f, #ff6062);
     position: absolute;
     left: -50px;
