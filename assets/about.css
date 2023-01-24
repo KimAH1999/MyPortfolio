@@ -93,20 +93,20 @@ small {
 }
 
 #bio-Sum {
-    padding-left: 5px;
-    padding-right: 5px;
-    text-indent: 12px;
-    margin-top: 2%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-indent: 20px;
+    margin-top: 1%;
 }
 
 #selfieWithDuke {
     display: block;
     margin-left: auto;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-right: auto;
-    margin-bottom: 7%;
+    margin-bottom: 2%;
     height: 12em;
-    width: 75%;
+    width: 65%;
 }
 
 .eduContainer {
@@ -129,7 +129,7 @@ small {
     width: 95%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 20px;
+    margin: 31px;
 }
 
 .button span {
@@ -209,7 +209,6 @@ small {
         padding-bottom: 5px;
     }
 
-
     small {
         color: rgba(44, 43, 43, 0.488);
     }
@@ -233,12 +232,10 @@ small {
         font-size: 25px;
     }
 
-    div.flex-child {
-        right: 0;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto auto;
+    #bio-Sum {
+        font-size: 12px;
+        padding-left: 5px;
+        padding-right: 2px;
     }
 
     #selfieWithDuke {
@@ -247,11 +244,12 @@ small {
     }
 
     .eduContainer {
-        font-size: 21px;
+        font-size: 15px;
         padding: 2px;
         margin: 1px;
     }
     .button {
+        margin: 7%;
         width: 85%;
     }
 }
