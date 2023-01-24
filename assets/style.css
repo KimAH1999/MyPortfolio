@@ -91,11 +91,11 @@ nav ul li a:hover {
 
 .col-1::after {
     content: '';
-    width: 10px;
-    height: 57%;
+    width: 12px;
+    height: 95%;
     background: linear-gradient(#ff469f, #ff6062);
     position: absolute;
-    left: -40px;
+    left: -50px;
     top: 8px;
 }
 
