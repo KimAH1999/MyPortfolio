@@ -301,7 +301,7 @@ ul li {
     
     .projects {
         display: grid;
-        align-items: end;
+        align-items: stretch;
         justify-content: center
     }
 
