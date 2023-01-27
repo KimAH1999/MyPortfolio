@@ -68,18 +68,18 @@ ul li {
 
 .projects {
     display: grid;
-    width: 100%;
+    width: 98%;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    margin: 15px 0 50px 0;
+    margin: 10px;
+    justify-items: center;
 }
 
 .projectsTitleTextEdit {
-   
     font-weight: bold;
     text-align: center;
     color: blueviolet;
-    padding: 20px; 
+    padding: 5px; 
 }
 
 .projectsImgs {
@@ -89,6 +89,81 @@ ul li {
     opacity: 0.9;
 }
 
+.hover-img {
+    color: #fff;
+    display: inline-block;
+    max-width: 320px;
+    min-width: 240px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+  
+.hover-img * {
+    box-sizing: border-box;
+    transition: all 0.45s ease;
+}
+  
+.hover-img::before,
+.hover-img::after {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 30px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '';
+    transition: all 0.3s ease;
+    z-index: 1;
+    opacity: 0;
+    transform: scaleY(2);
+}
+  
+.hover-img img {
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+  
+.hover-img figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1em;
+    opacity: 0;
+    z-index: 2;
+    transition-delay: 0.1s;
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+  
+.hover-img:hover::before,
+.hover-img:hover::after {
+    transform: scale(1);
+    opacity: 1;
+}
+  
+.hover-img:hover > img {
+    opacity: 0.7;
+}
+  
+.hover-img:hover figcaption {
+    opacity: 1;
+}
+  
 /*skills under "home" section*/
 .skillsTitle {
     text-align: center;
@@ -208,8 +283,51 @@ ul li {
     background-color: #b58bc2;
 }
 
-/*media sizing update*/
-@media only screen and (max-width:700px) {
+/*media sizing for tablet to 1025px*/
+@media screen and (max-width: 1025px) {
+    .projectHeaderTitle,
+    .skillsTitle,
+    .sideProjectHeaderTitle{
+        text-align: center;
+        font-size: 20px;
+        margin: 2px;
+        color: rgb(255, 255, 255);
+        background: linear-gradient(#db4447,#ff5ea2);
+    }
+
+    .projectsTitleTextEdit {
+        font-size: 15px;
+    }
+    
+    .projects {
+        display: grid;
+        align-items: end;
+        justify-content: center
+    }
+
+    .hover-img {
+        min-width: 230px;
+    }
+
+    .skillsTitle {
+        font-size: 20px;
+    }
+
+    .skillsSummary {
+        font-size: 18px;
+    }
+
+    h3, .h3 {
+        font-size:19px;
+    }
+
+    .skillsList {
+        font-size: 17px;
+    }
+}
+
+/*media sizing update for small media to 600px*/
+@media only screen and (max-width:600px) {
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -254,11 +372,16 @@ ul li {
         width: 100%;
         text-align: center;
         font-size: 17px;
+        margin: 0;
     }
     
     .projectsTitleTextEdit {
         text-align: center;
         padding: 1%;
+    }
+            
+    .hover-img {
+        width: 96%;
     }
 
     .skillsSummary {
@@ -267,10 +390,17 @@ ul li {
         font-size: 15px;
     }
     
+    h3, .h3 {
+        font-size:16px;
+    }
 
     .skillsList {
-        font-size: 15px;
+        font-size: 12px;
         margin-bottom: 5px;
+    }
+
+    .iconContainer {
+        gap: 0;
     }
 
     .nodejsIcon,
