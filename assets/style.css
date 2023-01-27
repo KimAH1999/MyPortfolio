@@ -7,8 +7,8 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 1%;
+    padding-right: 1%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -63,7 +63,7 @@ nav ul li a:hover {
 .col-1 {
     flex-basis: 40%;
     position: relative;
-    margin-left: 20px;
+    margin-left: 42px;
 }
 
 .col-1 h2 {
@@ -101,7 +101,7 @@ nav ul li a:hover {
 
 .col-2 {
     position: relative;
-    flex-basis: 60%;
+    flex-basis: 81%;
     display: flex;
     align-items: center;
 }
@@ -132,7 +132,9 @@ nav ul li a:hover {
     margin-left: 5%;
     color: #fff;
     cursor: pointer;
+    font-size: 18px;
 }
+
 /*Footer social links*/
 .social-links a i {
     height: 13px;
@@ -157,10 +159,10 @@ nav ul li a:hover {
    width: 17px;
    filter: black;
 }
+    
 
-
-/*media sizing update*/
-@media only screen and (max-width:700px) {
+/* Media Query for Mobile Devices */
+@media (min-width: 200px) and (max-width: 767px) {
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -209,6 +211,7 @@ nav ul li a:hover {
 
     .col-1 {
         flex-basis: 100%;
+        margin-left: 1px;
     }
 
     .col-1 h2 {

@@ -283,7 +283,7 @@ ul li {
     background-color: #b58bc2;
 }
 
-/*media sizing for tablet to 1025px*/
+/*media sizing for tablet to 1025px mini-adjustments compared to starter code for large media size*/
 @media screen and (max-width: 1025px) {
     .projectHeaderTitle,
     .skillsTitle,
