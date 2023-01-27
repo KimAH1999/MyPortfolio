@@ -81,7 +81,7 @@ nav ul li a:hover {
   width: 100%;
   background: linear-gradient(45deg, #cb4385, rgb(227, 111, 39));
   border-radius: 6px;
-  padding: 70px 60px 120px 60px;
+  padding: 30px 30px 30px 30px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,13 +92,12 @@ nav ul li a:hover {
 }
 
 .contactContainer .content .left-side {
-  width: 30%;
+  width: 31%;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 15px;
   position: relative;
 }
 
@@ -131,7 +130,7 @@ nav ul li a:hover {
 
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
-  font-size: 17px;
+  font-size: 15px;
   color: #efd8d8;
 }
 
@@ -179,19 +178,28 @@ nav ul li a:hover {
   color: #ff54a2;
 }
 
-@media (max-width: 950px) {
+/*media sizing for tablet to 1025px mini-adjustments compared to starter code for large media size*/
+@media screen and (max-width: 1025px) {
   .contactContainer {
-    width: 90%;
-    padding: 30px 40px 40px 35px;
+    width: 100%;
+    padding: 30px 5px 30px 5px;
   }
 
+  .content .left-side::before {
+    height: 60%;
+    width: 3px;
+  }
   .contactContainer .content .right-side {
     width: 75%;
     margin-left: 55px;
   }
+  .content .right-side p {
+    font-size: small;
+  }
 }
 
-@media (max-width: 700px) {
+/*media sizing update for small media to 600px*/
+@media only screen and (max-width:600px) {
   nav ul {
     width: 100%;
     background: linear-gradient(#cf2773, #db4447);
@@ -258,5 +266,6 @@ nav ul li a:hover {
 
   .content .right-side p {
     font-size: 17px;
+    padding: 1%;
   }
 }
