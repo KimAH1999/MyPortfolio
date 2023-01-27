@@ -108,8 +108,8 @@ ul li {
 .hover-img::before,
 .hover-img::after {
     background-color: rgba(0, 0, 0, 0.5);
-    border-top: 30px solid rgba(0, 0, 0, 0.5);
-    border-bottom: 10px solid rgba(0, 0, 0, 0.5);
+    border-top: 40px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 40px solid rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
     bottom: 0;
