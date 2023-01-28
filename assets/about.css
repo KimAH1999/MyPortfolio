@@ -105,8 +105,8 @@ small {
     margin-top: 2%;
     margin-right: auto;
     margin-bottom: 2%;
-    height: 12em;
-    width: 65%;
+    height: auto;
+    width: 70%;
 }
 
 .eduContainer {
@@ -157,8 +157,38 @@ small {
     right: 0;
 }
 
+/*media sizing for tablet to 1025px mini-adjustments compared to starter code for large media size*/
+@media screen and (max-width: 1025px) {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    #bio-Sum {
+        font-size: 17px;
+        padding-left: 5px;
+        padding-right: 2px;
+    }
+
+    #selfieWithDuke {
+        height: auto;
+        width: 35%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    .eduContainer {
+        font-size: 21px;
+        padding: 2px;
+    }
+}
+
 /*media sizing, update display when smaller screen*/
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:600px) {
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -225,7 +255,7 @@ small {
 
     .flex-child {
         flex: 1;
-        border: 1px solid lightpink;
+        border: thick double #000000;
     }
 
     h1 {
