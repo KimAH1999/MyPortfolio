@@ -5,7 +5,7 @@
 
 Hi!
 
-My name is Kimberly, and I created MyPortfolio to showcase who I am and what I can offer the team. I'm hunting for recruiters for any Front-end and/or Back-end positions. Please reach out to me at kimaguilar2017@gmail.com or via Linkdin. My goal is to enhance my skills and study more in order to advance my abilities.
+My name is Kimberly, and I created MyPortfolio to showcase who I am and what I can offer the team. I'm hunting for recruiters for any Front-end and/or Back-end positions. Please reach out to me at kimaguilar2017@gmail.com or via Linkdin(https://www.linkedin.com/in/kimberly-y-aguilar-h/). My goal is to enhance my skills and study more in order to advance my abilities.
 
 ## Table of Contents 
 
