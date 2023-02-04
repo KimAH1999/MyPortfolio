@@ -226,7 +226,7 @@ nav ul li a:hover {
   #menuList {
     overflow: hidden;
     transition: 0.5s;
-    top: 20%
+    top: 10%
   }
 
   .contactContainer {
