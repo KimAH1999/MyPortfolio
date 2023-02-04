@@ -106,7 +106,7 @@ nav ul li a:hover {
 
 .col-2 {
     position: relative;
-    flex-basis: 81%;
+    flex-basis: 70%;
     display: flex;
     align-items: center;
 }
