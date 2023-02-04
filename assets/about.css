@@ -215,6 +215,7 @@ small {
     #menuList {
         overflow: hidden;
         transition: 0.5s;
+        top: 20%
     }
 
     .container-box {

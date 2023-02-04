@@ -354,6 +354,7 @@ ul li {
     #menuList {
         overflow: hidden;
         transition: 0.5s;
+        top: 20%
     }
     
     /*change title when screen shifts to smaller media query size*/

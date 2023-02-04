@@ -23,6 +23,11 @@
     width: 50px;
     cursor: pointer;
     margin: 10px 5px;
+    margin-left: 106px;
+}
+
+#menuList {
+    margin-right: 8%;
 }
 
 .menu-icon {
@@ -182,13 +187,20 @@ nav ul li a:hover {
         color: #fff;
     }
 
+    .logo {
+        margin-left: 27px;
+    }
+
     .menu-icon {
         display: block;
+        margin-right: 7%;
     }
 
     #menuList {
         overflow: hidden;
         transition: 0.5s;
+        margin-right: 0;
+        top: 20%
     }
 
     .row {
