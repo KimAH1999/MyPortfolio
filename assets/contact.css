@@ -152,8 +152,39 @@ nav ul li a:hover {
 .button input[type="button"]:hover {
   background: #5029bc;
 }
+/*Contact Form for direct message option*/
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
-/*Footer social links*/
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.containerForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-top: 1px solid black;
+}
+/*Footer social links for direct click link icon*/
 .social-links a i {
   height: auto;
   margin: 10px;
