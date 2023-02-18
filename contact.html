@@ -43,6 +43,24 @@
               Feel free to check out my social profiles.</p>
           </div>
         </div>
+        <br>
+        <div class="containerForm">
+          <h3>Contact Form</h3>
+          <br>
+          <!--Syntax:URL for form action to be emailed to me at this location-->
+          <form action="submit-form-handler.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your name.." required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="email@gmail.com" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+            <br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
       </div>
       <footer>
         <div class="social-links">
