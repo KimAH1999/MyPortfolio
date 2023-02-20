@@ -19,6 +19,7 @@
   "homepage": "https://github.com/KimAH1999/MyPortfolio#readme",
   "dependencies": {
     "googleapis": "^111.0.0",
+    "http-server": "^14.1.1",
     "nodemailer": "^6.9.1"
   }
 }
