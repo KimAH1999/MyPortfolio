@@ -30,7 +30,7 @@ installs not needed in this repo
 ```
 
 ## Usage
-Demo link:https://myportfoliosite.herokuapp.com/
+Demo link:  https://myportfoliosite.herokuapp.com/
 
 1-PC output
 
