@@ -3,7 +3,7 @@ const { google } = require('googleapis');
 
 const CLIENT_ID = '174539307268-g3492vvpvj6sst8jpmesjgpf7el2l529.apps.googleusercontent.com'
 const CLIENT_SECRET = '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'
-const REDIRECT_URL = 'https://developer.google.com/outhplayground';
+const REDIRECT_URL = 'https://myportfoliosite.herokuapp.com/';
 const REFRESH_TOKEN = '1//04T7pl-SvyModCgYIARAAGAQSNwF-L9Ir5OejS-nLjBFJmJDdfoNlWBMTo0BklaiWtkjZNU-ltKE-ZFONi0z4JSeQGZi39-NYBe0';
 
 const oAuth2Client = new google.auth.OAuth2(CLIENT_ID, CLIENT_SECRET, REDIRECT_URL);
