@@ -1,6 +1,9 @@
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -27,10 +30,10 @@ app.post('/contact', async (req, res) => {
       auth: {
         type: 'OAuth2',
         user: 'kimaguilar2017@gmail.com',
-        clientId: CLIENT_ID,
-        clientSecret: CLIENT_SECRET,
-        refreshToken: REFRESH_TOKEN,
-        accessToken: accessToken,
+        clientId: process.env.CLIENT_ID,
+        clientSecret: process.env.CLIENT_SECRET,
+        refreshToken: process.env.REFRESH_TOKEN,
+        accessToken: process.env.ACCESS_TOKEN,
       },
     });
 
