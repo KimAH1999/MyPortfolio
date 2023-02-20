@@ -1,6 +1,8 @@
 const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const { google } = require('googleapis');
+
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -24,7 +26,15 @@ app.post('/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    // Create a nodemailer transport object
+    // Create a OAuth2 client object with Google API credentials
+    const oAuth2Client = new google.auth.OAuth2(
+      process.env.CLIENT_ID,
+      process.env.CLIENT_SECRET,
+      process.env.REDIRECT_URI
+    );
+    oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
+
+    // Create a nodemailer transport object with OAuth2 authentication
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -33,13 +43,13 @@ app.post('/contact', async (req, res) => {
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
-        accessToken: process.env.ACCESS_TOKEN,
+        accessToken: await oAuth2Client.getAccessToken(),
       },
     });
 
     // Send email using nodemailer
     await transport.sendMail({
-      from: 'Kimberly <kimaguilar2017@gmail.com>',
+      from: 'Sender Name <kimaguilar2017@gmail.com>',
       to: 'kimaguilar2017@gmail.com',
       subject: 'New Contact Form Submission',
       html: `
