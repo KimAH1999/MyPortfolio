@@ -49,7 +49,7 @@ app.post('/contact', async (req, res) => {
 
     try {
       await transport.sendMail({
-        from: 'Sender Name <kimaguilar2017@gmail.com>',
+        from: 'Kimberly Y Aguilar Hermoso <kimaguilar2017@gmail.com>',
         to: 'kimaguilar2017@gmail.com',
         subject: 'New Contact Form Submission',
         html: `
