@@ -40,6 +40,10 @@ body {
   margin: 10px 5px;
 }
 
+#menuList {
+  margin-right: 0;
+}
+
 .menu-icon {
   width: 25px;
   cursor: pointer;
@@ -250,6 +254,9 @@ input[type=submit]:hover {
     color: #fff;
   }
 
+  .logo {
+    margin-left: 5px;
+  }
   .menu-icon {
     display: block;
   }
