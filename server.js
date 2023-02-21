@@ -26,7 +26,6 @@ app.post('/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    // Create a OAuth2 client object with Google API credentials
     const oAuth2Client = new google.auth.OAuth2(
       process.env.CLIENT_ID,
       process.env.CLIENT_SECRET,
@@ -34,7 +33,6 @@ app.post('/contact', async (req, res) => {
     );
     oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
-    // Create a nodemailer transport object with OAuth2 authentication
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -43,25 +41,31 @@ app.post('/contact', async (req, res) => {
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
-        accessToken: await oAuth2Client.getAccessToken(),
+        accessToken: await oAuth2Client.getAccessToken().catch(error => {
+          console.error('Error getting access token:', error);
+        }),
       },
     });
 
-    // Send email using nodemailer
-    await transport.sendMail({
-      from: 'Sender Name <kimaguilar2017@gmail.com>',
-      to: 'kimaguilar2017@gmail.com',
-      subject: 'New Contact Form Submission',
-      html: `
-        <p>Name: ${name}</p>
-        <p>Email: ${email}</p>
-        <p>Message: ${message}</p>
-      `,
-    });
+    try {
+      await transport.sendMail({
+        from: 'Sender Name <kimaguilar2017@gmail.com>',
+        to: 'kimaguilar2017@gmail.com',
+        subject: 'New Contact Form Submission',
+        html: `
+          <p>Name: ${name}</p>
+          <p>Email: ${email}</p>
+          <p>Message: ${message}</p>
+        `,
+      });
 
-    res.status(200).send('Message sent successfully!');
+      res.status(200).send('Message sent successfully!');
+    } catch (error) {
+      console.error('Error sending email:', error);
+      res.status(500).send('Error sending message');
+    }
   } catch (error) {
-    console.error(error);
+    console.error('Error creating OAuth2 client:', error);
     res.status(500).send('Error sending message');
   }
 });
