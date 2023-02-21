@@ -1,58 +1,54 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="iconFlower/png" href="./assets/img/iconFlower.png">
-    <title>About Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/about.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="navbar">
-            <img src="./assets/img/iconFlower.png" class="logo">
-            <nav>
-                <ul id="menuList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="skills.html">Skills</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <img src="./assets/img/optionslogo.png" class="menu-icon" onclick="togglemenu()">
-        </div>
-        <div>
-            <div class="container-box">
-                <img src="./assets/img/background.png" alt="selfie-Img" width="1000" height="300" class="header-Img">
-                <div class="text-block">
-                    <h4>Kimberly Aguilar Hermoso</h4>
-                    <p>Full Stack Web Developer,
-                        <br>
-                        <small>MIT LICENCED.</small>
-                    </p>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" type="iconFlower/png" href="./assets/img/iconFlower.png">
+        <title>About Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./assets/about.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="./assets/img/iconFlower.png" class="logo">
+                <nav>
+                    <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="./assets/img/optionslogo.png" class="menu-icon" onclick="togglemenu()">
+            </div>
+            <div>
+                <div class="container-box">
+                    <img src="./assets/img/background.png" alt="selfie-Img" width="1000" height="300" class="header-Img">
+                    <div class="text-block">
+                        <h4>Kimberly Aguilar Hermoso</h4>
+                        <p>Full Stack Web Developer,
+                            <br>
+                            <small>MIT LICENCED.</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-child">
+                        <h1>So, who am I now?</h1>
+                        <p id="bio-Sum">I am a first-generation college and high school graduate. I am a UCSD Extension bootcamp certified Full Stack Web Developer with expertise in front-end and back-end web projects, and my primary languages are listed under 
+                            <strong><a href="skills.html">Educated Skills.</a></strong> I enjoy learning new skills to broaden the options for my display outcomes, but as I near the end of my schooling, I wish I could still learn more even after receiving my second certificate. As I finish my final class for a Computer Programming credential at San Diego Mesa College, I'll be looking for a decent job where I can continue my education and enhance my talents.</p>
+                    </div>
+                    <div class="flex-child">
+                        <img src="./assets/img/aboutSelfie.jpg" id="selfieWithDuke">
+                    </div>
                 </div>
             </div>
-            <div class="flex-container">
-                <div class="flex-child">
-                    <h1>So, who am I now?</h1>
-                    <p id="bio-Sum">I am a first-generation college and high school graduate. I am a UCSD Extension bootcamp certified Full Stack Web Developer with expertise in front-end and back-end web projects, and my primary languages are listed under 
-                        <strong><a href="skills.html">Educated Skills.</a></strong> I enjoy learning new skills to broaden the options for my display outcomes, but as I near the end of my schooling, I wish I could still learn more even after receiving my second certificate. As I finish my final class for a Computer Programming credential at San Diego Mesa College, I'll be looking for a decent job where I can continue my education and enhance my talents.</p>
-                </div>
-                <div class="flex-child">
-                    <img src="./assets/img/aboutSelfie.jpg" id="selfieWithDuke">
-                </div>
-            </div>
+            <ul class="eduContainer">
+                <strong>Education</strong>
+                <li>UC San Diego Extension || <i>Web Development</i></li>
+                <li>San Diego Mesa College || <i>Computer Programming</i></li>
+            </ul>
+            <a href="contact.html"><button class="button"><span>View Contact Info</span></button></a>  
         </div>
-        <ul class="eduContainer">
-            <strong>Education</strong>
-            <li>UC San Diego Extension || <i>Web Development</i></li>
-            <li>San Diego Mesa College || <i>Computer Programming</i></li>
-        </ul>
-        <a href="contact.html"><button class="button"><span>View Contact Info</span></button></a>
         <script src="script.js"></script>
-    </div>
-</body>
-
+    </body>
 </html>
