@@ -134,7 +134,7 @@ nav ul li a:hover {
 
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
-  font-size: 15px;
+  font-size: 17px;
   color: #efd8d8;
 }
 
@@ -304,7 +304,7 @@ input[type=submit]:hover {
   }
 
   .content .right-side p {
-    font-size: 17px;
+    font-size: 18px;
     padding: 1%;
   }
 }
