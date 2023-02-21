@@ -40,10 +40,6 @@ body {
   margin: 10px 5px;
 }
 
-#menuList {
-  margin-right: 0;
-}
-
 .menu-icon {
   width: 25px;
   cursor: pointer;

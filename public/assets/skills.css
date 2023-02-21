@@ -32,7 +32,6 @@
     display: none;
 }
 
-
 nav {
     flex: 1;
     text-align: right;
@@ -53,10 +52,6 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff5ea2;
-}
-
-ul li {
-    margin: 16px 0;
 }
 
 .projectHeaderTitle {
