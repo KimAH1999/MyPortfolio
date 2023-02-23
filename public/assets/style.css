@@ -254,22 +254,13 @@ nav ul li a:hover {
         top: 10%
     }
 
+    .color-box {
+        transform: translateX(75px);
+    }
+
     .row {
         flex-direction: column;
         margin: auto;
-    }
-
-    .col-2 {
-        flex-basis: 100%;
-        margin-bottom: 50px;
-    }
-
-    .col-2 .selfieBrand {
-        width: 50%;
-    }
-
-    .color-box {
-        transform: translateX(75px);
     }
 
     .col-1 {
@@ -284,7 +275,19 @@ nav ul li a:hover {
     .col-1 h3 {
         font-size: 15px;
     }
-    
+
+    .col-1::after {
+        left: -23%;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .col-2 .selfieBrand {
+        width: 50%;
+    }
+
     .boxSum img {
         width: 35px;
         margin-bottom: 5px;
