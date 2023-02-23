@@ -4,11 +4,30 @@
     font-family: sans-serif;
 }
 
+h2 {
+    animation-name: color-change;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes color-change {
+    0% {
+      color: rgb(192, 67, 98);
+    }
+    50% {
+      color: rgb(189, 39, 76);
+    }
+    100% {
+      color: rgb(196, 37, 127);
+    }
+}
+  
+
 .container {
     width: 100%;
     min-height: 100vh;
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 8%;
+    padding-right: 8%;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -17,6 +36,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: rgba(0,0,0,0.5);
 }
 
 .logo {
@@ -26,7 +46,7 @@
 }
 
 #menuList {
-    margin-right: 8%;
+    margin-right: 30px;
 }
 
 .menu-icon {
@@ -43,12 +63,12 @@ nav {
 nav ul li {
     list-style: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 21px;
     font-weight: bold;
 }
@@ -57,26 +77,76 @@ nav ul li a:hover {
     color: #ff5ea2;
 }
 
+.hero-video {
+    position: relative;
+    height: auto;
+}
+  
+.hero-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+  
+.hero-video .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+  
+  
+.hero-video h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    z-index: 1;
+}
+
+#bgvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}    
+
 .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 100px 0;
 }
 
 .col-1 {
-    flex-basis: 40%;
     position: relative;
-    margin-left: 42px;
+    flex-basis: 40%;
+    margin-left: 50px;
 }
 
 .col-1 h2 {
-    font-size: 54px;
+    font-size: 35px;
 }
 
 .col-1 h3 {
-    font-size: 30px;
-    color: #707070;
+    font-size: 25px;
+    color: #b7b7b7;
     font-weight: 100;
     margin: 10px 0 10px;
 }
@@ -90,17 +160,20 @@ nav ul li a:hover {
 /*adds margin to seperate <p> to <h4>*/
 .col-1 h4 {
     margin: 30px 0;
-    font-size: 20px;
+    font-size: 15px;
+    color: #b7b7b7;
 }
 
 .col-1::after {
     content: '';
-    width: 12px;
-    height: 90%;
-    background: linear-gradient(#ff469f, #ff6062);
+    display: block;
+    width: 35px;
+    height: 253px;
     position: absolute;
     left: -50px;
-    top: 8px;
+    top: 50px;
+    transform: translateY(-19%);
+    background: linear-gradient(#ff6062,#ff469f);
 }
 
 .col-2 {
@@ -111,19 +184,19 @@ nav ul li a:hover {
 }
 
 .col-2 .selfieBrand {
-    width: 35%;
+    width: 45%;
 }
 
 .color-box {
     position: absolute;
+    height: 100%;
+    width: 250%;
     right: 0;
     top: 0;
     background: linear-gradient(#ff54a2, #ff575a);
-    border-radius: 20px 0 0 20px;
-    height: 100%;
-    width: 95%;
     z-index: -1;
     transform: translateX(150px);
+    display: inline-block;
 }
 
 .boxSum img {
@@ -140,33 +213,17 @@ nav ul li a:hover {
 }
 
 /*Footer social links*/
-.social-links a i {
-    height: 13px;
-    margin: 20px;
-    cursor: pointer;
-}
-
 .social-links {
     font-size: 25px;
     text-align: center;
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; /* change to desired text color */
 }
-
-.fa-color {
-    color: #000;
-}
-
-.fa-color:hover {
-    color: #ff54a2;
-}
- /*replit icon wasn't available in font-awesome link, so img.png added instead to compensate*/
-.fa-replit {
-   width: 17px;
-   filter: black;
-}
-    
 
 /* Media Query for Mobile Devices */
-@media (min-width: 200px) and (max-width: 767px) {
+@media only screen and (max-width:600px) {
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -178,6 +235,7 @@ nav ul li a:hover {
 
     nav ul li {
         display: block;
+        padding-inline-end: 9%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -186,13 +244,9 @@ nav ul li a:hover {
         color: #fff;
     }
 
-    .logo {
-        margin-left: 28px;
-    }
 
     .menu-icon {
         display: block;
-        margin-right: 7%;
     }
 
     #menuList {
@@ -245,8 +299,5 @@ nav ul li a:hover {
         padding-top: 8px;
         padding-bottom: 5px;
     }
-
-    .social-links {
-        display: inline-block;
-    }
 }
+
