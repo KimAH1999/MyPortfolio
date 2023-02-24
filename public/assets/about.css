@@ -17,13 +17,23 @@
     width: 100%;
     display: flex;
     align-items: center;
+    background-color: rgba(0,0,0,0.5);
 }
-
 
 .logo {
     width: 50px;
     cursor: pointer;
     margin: 10px 5px;
+}
+
+#menuList {
+    margin-right: 0px;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
 }
 
 nav {
@@ -39,7 +49,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
     font-size: 21px;
     font-weight: bold;
 }
@@ -48,11 +58,56 @@ nav ul li a:hover {
     color: #ff5ea2;
 }
 
-.menu-icon {
-    width: 25px;
-    cursor: pointer;
-    display: none;
+.hero-video {
+    position: relative;
+    height: auto;
 }
+  
+.hero-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+  
+.hero-video .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+  
+.hero-video h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3em;
+    z-index: 1;
+}
+
+#bgvid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}  
+/*****************************************/ 
 
 .container-box {
     position: relative;
@@ -64,6 +119,7 @@ nav ul li a:hover {
     width: 100%;
     height: 180px;
     object-fit: cover;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text-block {
@@ -90,6 +146,7 @@ small {
 .flex-child {
     flex: 1;
     border: 1px solid rgb(40, 40, 40);
+    background-color: rgba(0,0,0,0.5);
 }
 
 #bio-Sum {
@@ -114,6 +171,7 @@ small {
     font-size: 21px;
     padding: 1em 2em 2em;
     border: 1px solid rgb(40, 40, 40);
+    background-color: rgba(0,0,0,0.5);
     margin: 25px;
 }
 

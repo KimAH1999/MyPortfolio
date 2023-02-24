@@ -97,7 +97,7 @@ nav ul li a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0,0,0,0.5);
     z-index: -1;
 }
   
@@ -125,6 +125,7 @@ nav ul li a:hover {
     -o-background-size: cover;
     background-size: cover;
 }    
+/*****************************************/
 
 .row {
     display: flex;
@@ -144,14 +145,14 @@ nav ul li a:hover {
 
 .col-1 h3 {
     font-size: 25px;
-    color: #b7b7b7;
+    color: #fff;
     font-weight: 100;
     margin: 10px 0 10px;
 }
 
 .col-1 p {
     font-size: 16px;
-    color: #b7b7b7;
+    color: #fff;
     font-weight: 100;
 }
 
@@ -159,7 +160,7 @@ nav ul li a:hover {
 .col-1 h4 {
     margin: 30px 0;
     font-size: 15px;
-    color: #b7b7b7;
+    color: #fff;
 }
 
 .col-1::after {
@@ -216,8 +217,7 @@ nav ul li a:hover {
     text-align: center;
     display: block;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5); 
-    color: #fff; /* change to desired text color */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Media Query for Mobile Devices */
