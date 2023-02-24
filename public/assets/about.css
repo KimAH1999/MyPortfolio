@@ -17,7 +17,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.28);
 }
 
 .logo {
@@ -119,7 +119,7 @@ nav ul li a:hover {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.28);
 }
 
 .text-block {
@@ -141,12 +141,12 @@ small {
 
 .flex-container {
     display: flex;
+    flex-direction: column;
 }
 
 .flex-child {
     flex: 1;
-    border: 1px solid rgb(40, 40, 40);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.28);
 }
 
 #bio-Sum {
@@ -163,7 +163,7 @@ small {
     margin-right: auto;
     margin-bottom: 2%;
     height: auto;
-    width: 70%;
+    width: 30%;
 }
 
 .eduContainer {
@@ -171,7 +171,7 @@ small {
     font-size: 21px;
     padding: 1em 2em 2em;
     border: 1px solid rgb(40, 40, 40);
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.28);
     margin: 25px;
 }
 
