@@ -34,12 +34,16 @@ Demo link:  https://myportfoliosite.herokuapp.com/
 
 1-PC output
 
-![Screenshot 2022-11-08 10 40 15 AM](https://user-images.githubusercontent.com/87666809/200648798-c94f0216-4688-45a0-a58b-419e1f383bb5.png)
+![Screenshot 2023-02-25 1 32 09 PM](https://user-images.githubusercontent.com/87666809/221380623-dac27b46-afdd-4273-84e8-da881648f8b0.png)
+![Screenshot 2023-02-25 1 32 44 PM](https://user-images.githubusercontent.com/87666809/221380625-f673c1e8-e1a4-49c6-86d4-b8b52c75b724.png)
+
 
 
 2-Smartphone output
 
-![Screenshot 2022-11-08 10 41 13 AM](https://user-images.githubusercontent.com/87666809/200648783-f5105afd-92c3-4384-90ca-5139865a98d2.png)
+![Screenshot 2023-02-25 1 33 41 PM](https://user-images.githubusercontent.com/87666809/221380628-8045d01a-9116-479d-a7f7-7218fd161a81.png)
+![Screenshot 2023-02-25 1 35 46 PM](https://user-images.githubusercontent.com/87666809/221380684-f0f7bf43-a277-4cd3-a417-f153b9aa7cea.png)
+
 
 ## License  
 
