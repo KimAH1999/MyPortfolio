@@ -213,7 +213,7 @@ nav ul li a:hover {
     opacity: 1;
 }
   
-/*skills under "home" section*/
+/*skills body section for title, description, and list of skills*/
 .skillsTitle {
     text-align: center;
     font-size: 35px;
@@ -230,13 +230,26 @@ nav ul li a:hover {
     margin-bottom: 2%;
 }
 
-/*skills listed*/
+.skillsContainer {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffffb3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 30px;
+}
+
 .skillsList {
     max-width: 800px;
     margin: 15px auto;
     padding-left: 40px;
     color: #2b2525;
+    text-align: left;
+    margin-top: 30px;
 }
+
 
 /*container for skills icons*/
 .iconContainer {
@@ -369,10 +382,6 @@ nav ul li a:hover {
         top: 10%
     }
     
-    
-
-    
-
     /*change title when screen shifts to smaller media query size*/
     .projectHeaderTitle,
     .skillsTitle,
@@ -426,7 +435,14 @@ nav ul li a:hover {
         font-size:16px;
     }
 
+    .skillsContainer {
+        max-width: 320px;
+        padding: 10px;
+    }
+
     .skillsList {
+        max-width: 280px;
+        padding-left: 10px;
         font-size: 12px;
         margin-bottom: 5px;
     }
