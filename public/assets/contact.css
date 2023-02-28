@@ -21,8 +21,7 @@ body {
 .container {
   width: 100%;
   min-height: 100vh;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding: 0 8%;
   box-sizing: border-box;
   overflow: hidden;
 }
@@ -34,19 +33,14 @@ body {
   background-color: rgba(0, 0, 0, 0.28);
 }
 
-.logo {
+.logo,
+.menu-icon {
   width: 50px;
   cursor: pointer;
   margin: 10px 5px;
 }
 
-#menuList {
-  margin-right: 0px;
-}
-
 .menu-icon {
-  width: 25px;
-  cursor: pointer;
   display: none;
 }
 
