@@ -2,9 +2,11 @@ const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
+const fs = require('fs');
+
+const clientSecret = JSON.parse(fs.readFileSync('./client_secret.json'));
 
 const dotenv = require('dotenv');
-
 dotenv.config();
 
 const app = express();
@@ -28,7 +30,7 @@ app.post('/contact', async (req, res) => {
 
     const oAuth2Client = new google.auth.OAuth2(
       process.env.CLIENT_ID,
-      process.env.CLIENT_SECRET,
+      clientSecret.web.client_secret,
       process.env.REDIRECT_URL
     );
     oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
@@ -39,7 +41,7 @@ app.post('/contact', async (req, res) => {
         type: 'OAuth2',
         user: 'kimaguilar2017@gmail.com',
         clientId: process.env.CLIENT_ID,
-        clientSecret: process.env.CLIENT_SECRET,
+        clientSecret: clientSecret.web.client_secret,
         refreshToken: process.env.REFRESH_TOKEN,
         accessToken: await oAuth2Client.getAccessToken().catch(error => {
           console.error('Error getting access token:', error);
