@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
-const clientSecret = require('./client_secret.json');
+const clientSecret = require('./client_secrets.json');
 
 const dotenv = require('dotenv');
 dotenv.config();
