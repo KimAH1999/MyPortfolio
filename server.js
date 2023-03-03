@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 5000;
 // Serve static files from the public directory
 app.use(express.static('public'));
 
-// Parse incoming form data
+// Parse JSON and urlencoded data
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // GET Route for homepage
