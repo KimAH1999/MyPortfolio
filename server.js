@@ -67,7 +67,7 @@ app.post('/contact', async (req, res) => {
     }
   } catch (error) {
     console.error('Error creating OAuth2 client:', error);
-    res.status(500).send('Error sending message');
+    res.status(500).send('Error sending message form');
   }
 });
 
