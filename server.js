@@ -4,10 +4,10 @@ const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const fs = require('fs');
 
+const clientSecret = JSON.parse(fs.readFileSync('./client_secret.json'));
+
 const dotenv = require('dotenv');
 dotenv.config();
-
-const clientSecret = JSON.parse(process.env.CLIENT_SECRET);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -30,7 +30,7 @@ app.post('/contact', async (req, res) => {
 
     const oAuth2Client = new google.auth.OAuth2(
       process.env.CLIENT_ID,
-      clientSecret.web.client_secret,
+      process.env.CLIENT_SECRET,
       process.env.REDIRECT_URL
     );
     oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
@@ -41,7 +41,7 @@ app.post('/contact', async (req, res) => {
         type: 'OAuth2',
         user: 'kimaguilar2017@gmail.com',
         clientId: process.env.CLIENT_ID,
-        clientSecret: clientSecret.web.client_secret,
+        clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
         accessToken: await oAuth2Client.getAccessToken().catch(error => {
           console.error('Error getting access token:', error);
@@ -67,4 +67,11 @@ app.post('/contact', async (req, res) => {
       res.status(500).send('Error sending message');
     }
   } catch (error) {
-    console.error('Error creating OAuth2 client:',
+    console.error('Error creating OAuth2 client:', error);
+    res.status(500).send('Error sending message');
+  }
+});
+
+app.listen(PORT, () => {
+  console.log(`App listening on port ${PORT}`);
+});
