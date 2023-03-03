@@ -4,10 +4,10 @@ const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const fs = require('fs');
 
-const clientSecret = JSON.parse(fs.readFileSync('./client_secret.json'));
-
 const dotenv = require('dotenv');
 dotenv.config();
+
+const clientSecret = JSON.parse(process.env.CLIENT_SECRET);
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -67,11 +67,4 @@ app.post('/contact', async (req, res) => {
       res.status(500).send('Error sending message');
     }
   } catch (error) {
-    console.error('Error creating OAuth2 client:', error);
-    res.status(500).send('Error sending message');
-  }
-});
-
-app.listen(PORT, () => {
-  console.log(`App listening on port ${PORT}`);
-});
+    console.error('Error creating OAuth2 client:',
