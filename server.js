@@ -3,6 +3,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const clientSecret = require('./client_secrets.json');
+const bodyParser = require('body-parser'); 
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -13,9 +14,8 @@ const PORT = process.env.PORT || 5000;
 // Serve static files from the public directory
 app.use(express.static('public'));
 
-// Parse JSON and urlencoded data
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// Parse incoming form data
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 // GET Route for homepage
 app.get('/', (req, res) => {
