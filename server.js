@@ -30,7 +30,7 @@ app.post('/contact', async (req, res) => {
     const oAuth2Client = new google.auth.OAuth2(
       process.env.CLIENT_ID,
       clientSecret.installed.client_secret,
-      process.env.REDIRECT_URL
+      process.env.REDIRECT_URI
     );
     oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
 
