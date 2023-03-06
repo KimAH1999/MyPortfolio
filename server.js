@@ -2,8 +2,7 @@ const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
-const clientSecret = require('./client_secrets.json');
-const bodyParser = require('body-parser'); 
+const bodyParser = require('body-parser');
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -15,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.static('public'));
 
 // Parse incoming form data
-app.use(bodyParser.urlencoded({ extended: true })); 
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // GET Route for homepage
 app.get('/', (req, res) => {
@@ -29,7 +28,7 @@ app.post('/contact', async (req, res) => {
 
     const oAuth2Client = new google.auth.OAuth2(
       process.env.CLIENT_ID,
-      clientSecret.installed.client_secret,
+      process.env.CLIENT_SECRET,
       process.env.REDIRECT_URI
     );
     oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
@@ -40,7 +39,7 @@ app.post('/contact', async (req, res) => {
         type: 'OAuth2',
         user: 'kimaguilar2017@gmail.com',
         clientId: process.env.CLIENT_ID,
-        clientSecret: clientSecret.installed.client_secret,
+        clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
         accessToken: await oAuth2Client.getAccessToken().catch(error => {
           console.error('Error getting access token:', error);
@@ -59,7 +58,7 @@ app.post('/contact', async (req, res) => {
           <p>Message: ${message}</p>
         `,
       });
-
+      
       res.status(200).send('Message sent successfully!');
     } catch (error) {
       console.error('Error sending email:', error);
