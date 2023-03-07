@@ -258,7 +258,9 @@ h2 {
     }
     nav ul li {
         display: block;
-        margin: 10px 0;
+        padding-inline-end: 0%;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
     nav ul li a {
         color: #fff;
@@ -269,7 +271,7 @@ h2 {
     #menuList {
         overflow: hidden;
         transition: 0.5s;
-        top: 10%
+        top: 13%
     }
     .container-box {
         width: 100%;
