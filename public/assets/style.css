@@ -216,6 +216,13 @@ nav ul li a:hover {
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width:600px) {
+    body {
+        background-image: url('./img/pexelsByIcon0.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -246,7 +253,11 @@ nav ul li a:hover {
         margin-right: 0;
         top: 13%
     }
-
+    
+    #bgvid {
+        display: none;
+    }
+    
     .color-box {
         transform: translateX(75px);
     }
