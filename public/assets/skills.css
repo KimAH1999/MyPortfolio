@@ -392,7 +392,7 @@ nav ul li a:hover {
     .sideProjectHeaderTitle{
         text-align: center;
         font-size: 20px;
-        margin: 2px;
+        margin: 0px;
         color: rgb(255, 255, 255);
         background: linear-gradient(#db4447,#ff5ea2);
     }
