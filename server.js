@@ -59,7 +59,7 @@ app.post('/contact', async (req, res) => {
         `,
       });
       
-      res.status(200).send('Message sent successfully!');
+      res.sendFile(path.join(__dirname, '/public/message.html'));
     } catch (error) {
       console.error('Error sending email:', error);
       res.status(500).send('Error sending message');
