@@ -26,7 +26,7 @@ My name is Kimberly, and I created MyPortfolio to showcase who I am and what I c
 To install necessary dependencies, run the following command:
 
 ```
-installs not needed in this repo
+npm install
 ```
 
 ## Usage
