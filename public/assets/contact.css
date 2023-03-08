@@ -280,6 +280,13 @@ input[type=submit]:hover {
 
 /*media sizing update for small media to 600px*/
 @media only screen and (max-width:600px) {
+  body {
+    background-image: url('./img/pexelsByRyutaroTsukata.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
   nav ul {
     width: 100%;
     background: linear-gradient(#cf2773, #db4447);
@@ -310,6 +317,10 @@ input[type=submit]:hover {
     overflow: hidden;
     transition: 0.5s;
     top: 13%
+  }
+  
+  #bgvid {
+    display:none;
   }
 
   .contactContainer {
