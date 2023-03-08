@@ -26,30 +26,12 @@
       font-size: 18px;
       margin: 10px 0;
     }
-    button {
-      background-color: #0099ff;
-      border: none;
-      border-radius: 5px;
-      color: #fff;
-      cursor: pointer;
-      font-size: 16px;
-      padding: 10px 20px;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Message Sent Successfully!</h1>
     <p>Thank you for contacting me. I will get back to you as soon as possible.</p>
-    <button onclick="closeMessage()">Close</button>
   </div>
-  <script>
-    function closeMessage() {
-      const iframe = window.parent.document.getElementById('contact-form');
-      const messageFrame = window.frameElement;
-      messageFrame.parentNode.removeChild(messageFrame);
-      iframe.style.display = 'block';
-    }
-  </script>
 </body>
 </html>
