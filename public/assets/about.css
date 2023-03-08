@@ -248,6 +248,13 @@ h2 {
 }
 
 @media only screen and (max-width: 600px) {
+    body {
+        background-image: url('./img/pexelsByRyutaroTsukata.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
     nav ul {
         width: 100%;
         background: linear-gradient(#cf2773, #db4447);
@@ -256,75 +263,96 @@ h2 {
         right: 0;
         z-index: 2;
     }
+    
     nav ul li {
         display: block;
         padding-inline-end: 0%;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+    
     nav ul li a {
         color: #fff;
     }
+    
     .menu-icon {
         display: block;
     }
+    
     #menuList {
         overflow: hidden;
         transition: 0.5s;
         top: 13%
     }
+    
+    #bgvid {
+        display: none;
+    }
+    
     .container-box {
         width: 100%;
         box-sizing: border-box;
         overflow: hidden;
     }
+    
     .header-Img {
         width: 245%;
         height: 150px;
         object-fit: cover;
     }
+    
     .text-block {
         position: absolute;
         width: inherit;
         color: white;
         padding: 5px 10px;
     }
+    
     small {
         color: rgba(44, 43, 43, 0.488);
     }
+    
     p {
         place-items: center;
         font-size: 21px;
     }
+    
     .flex-container {
         display: flex;
         flex-direction: column;
     }
+    
     .flex-child {
         flex: 1;
     }
+    
     h1 {
         font-size: 25px;
     }
+    
     #bio-Sum {
         font-size: 14px;
         padding: 0.25em;
         margin: 5px;
     }
+    
     #selfieWithDuke {
         height: auto;
         width: 100%;
         max-width: 500px;
         margin: 0 auto;
     }
+    
     .eduContainer {
         font-size: 18px;
         padding: 0.5em;
         margin: 10px;
     }
+    
     .eduContainer li {
         margin-bottom: 10px;
     }
+    
     .button {
         margin: 7%;
         width: 85%;
@@ -336,6 +364,7 @@ h2 {
       padding: 0.5em;
       margin: 10px;
     }
+    
     #selfieWithDuke {
         height: auto;
         width: 100%;
@@ -350,6 +379,7 @@ h2 {
       padding: 1em;
       margin: 15px;
     }
+    
     #selfieWithDuke {
         height: auto;
         width: 100%;
@@ -357,8 +387,3 @@ h2 {
         margin: 0 auto;
     }
 }
-  
-  
-  
-  
-  
