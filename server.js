@@ -3,6 +3,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const { google } = require('googleapis');
 const bodyParser = require('body-parser');
+const { OAuth2Client } = require('google-auth-library');
 
 const dotenv = require('dotenv');
 dotenv.config();
@@ -26,12 +27,18 @@ app.post('/contact', async (req, res) => {
   try {
     const { name, email, message } = req.body;
 
-    const oAuth2Client = new google.auth.OAuth2(
+    const oAuth2Client = new OAuth2Client(
       process.env.CLIENT_ID,
       process.env.CLIENT_SECRET,
       process.env.REDIRECT_URI
     );
-    oAuth2Client.setCredentials({ refresh_token: process.env.REFRESH_TOKEN });
+    oAuth2Client.setCredentials({
+      access_token: process.env.ACCESS_TOKEN,
+      refresh_token: process.env.REFRESH_TOKEN,
+      scope: 'https://www.googleapis.com/auth/gmail.send',
+      token_type: 'Bearer',
+      expiry_date: Number(process.env.EXPIRY_DATE),
+    });
 
     const transport = nodemailer.createTransport({
       service: 'gmail',
@@ -41,9 +48,8 @@ app.post('/contact', async (req, res) => {
         clientId: process.env.CLIENT_ID,
         clientSecret: process.env.CLIENT_SECRET,
         refreshToken: process.env.REFRESH_TOKEN,
-        accessToken: await oAuth2Client.getAccessToken().catch(error => {
-          console.error('Error getting access token:', error);
-        }),
+        accessToken: process.env.ACCESS_TOKEN,
+        expires: Number(process.env.EXPIRY_DATE),
       },
     });
 
