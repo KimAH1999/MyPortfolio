@@ -164,45 +164,47 @@ nav ul li a:hover {
 h2 {
     text-align: center;
 }
-/*Education container certification description*/
+
 .eduContainer {
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 20px;
     border-radius: 5px;
+    padding-left: 50px;
 }
-  
+
 .eduContainer h2 {
     font-size: 24px;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px;
 }
-  
+
 .eduContainer p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
 }
-  
+
 .eduContainer ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-  
+
 .eduContainer li {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
-  
+
 .eduContainer a {
     color: #551A8B;
     text-decoration: none;
 }
-  
+
 .eduContainer a:hover {
     text-decoration: underline;
 }
