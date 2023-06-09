@@ -136,6 +136,7 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
 .flex-child {
@@ -198,6 +199,10 @@ h2 {
   line-height: 1.5;
   margin-bottom: 10px;
   padding-left: 20px;
+}
+
+.eduContainer .highlight {
+  margin-left: -5%;
 }
 
 .eduContainer a {
@@ -336,7 +341,8 @@ h2 {
   #bio-Sum {
     font-size: 14px;
     padding: 0.25em;
-    margin: 5px;
+    margin: 5px 0;
+    text-align: center;
   }
 
   #selfieWithDuke {
@@ -354,6 +360,10 @@ h2 {
 
   .eduContainer li {
     margin-bottom: 10px;
+  }
+
+  .eduContainer .highlight {
+    margin-left: -10%;
   }
 
   .button {
@@ -376,32 +386,36 @@ h2 {
     max-width: 200px;
     margin: 0 auto;
   }
+
   .button {
     width: 100%;
     margin: 10px auto;
   }
 }
 
-/*4K screen size*/
-@media only screen and (min-width: 3840px) {
-    #bio-Sum {
-      font-size: 18px;
-      padding: 1em;
-      margin: 15px;
-    }
-  
-    #selfieWithDuke {
-      height: auto;
-      width: 100%;
-      max-width: 350px;
-      margin: 0 auto;
-    }
-  
-    .button {
-      width: 95%;
-      margin: 50px 0 50px 30px; /* Adjust the margin values as needed */
-      padding: 12px 20px; /* Adjust the padding as needed */
-      font-size: 25px;
-    }
+/* Media query for screens with a resolution of 2560 x 951 and above (4K) */
+@media only screen and (min-width: 2560px) and (min-height: 951px) {
+  #bio-Sum {
+    font-size: 18px;
+    padding: 1em;
+    margin: 15px;
+  }
+
+  #selfieWithDuke {
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
   }
   
+  .eduContainer .highlight {
+    margin-left: -2%;
+  }
+
+  .button {
+    width: 95%;
+    margin: 50px 0 50px 30px;
+    padding: 12px 20px;
+    font-size: 25px;
+  }
+}
