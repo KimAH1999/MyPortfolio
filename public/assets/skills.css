@@ -110,6 +110,13 @@ nav ul li a:hover {
   background-color: #b58bc2;
 }
 
+.sideProjectHeaderTitle {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(255, 255, 255);
+  background-color: #b58bc2;
+}
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -327,12 +334,26 @@ nav ul li a:hover {
   background-image: url("./img/hoverOvermondodb.png");
 }
 
-.sideProjectHeaderTitle {
-  text-align: center;
-  font-size: 35px;
-  color: rgb(255, 255, 255);
-  background-color: #b58bc2;
+.resume-download {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
+
+.download-button {
+  padding: 12px 20px;
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
 /*Footer section*/
 /* Styles for larger screens */
 .footer {
@@ -437,7 +458,7 @@ nav ul li a:hover {
     color: rgb(255, 255, 255);
     background: linear-gradient(#db4447, #ff5ea2);
   }
-
+  
   .projects {
     display: grid;
     align-items: stretch;
